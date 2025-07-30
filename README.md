@@ -86,36 +86,152 @@ Alert users about new matches, messages, or price drops.
 
 ---
 
-## 📂 Project Structure
+### 📁 **Directory Structure for `lior-and-eliora` Flutter App**
 
 ```bash
-lior-eliora/
-├── flutter_app/               # Flutter frontend (mobile & web)
-│   ├── lib/
-│   │   ├── screens/           # UI pages
-│   │   ├── widgets/           # Reusable components
-│   │   ├── services/          # API calls
-│   │   ├── models/            # Data models (Dart classes)
-│   │   └── main.dart
+lior-and-eliora/
+├── assets/
+│   ├── fonts/
+│   │   ├── Lato-Regular.ttf
+│   │   ├── Lato-Bold.ttf
+│   │   ├── Montserrat-Regular.ttf
+│   │   └── Roboto-Medium.ttf
+│   └── images/
+│       ├── properties/
+│       │   ├── property_0.jpg
+│       │   ├── property_1.jpg
+│       │   ├── property_2.jpg
+│       │   ├── property_3.jpg
+│       │   ├── property_4.jpeg
+│       │   ├── property_4.jpg
+│       │   ├── property_5.jpeg
+│       │   ├── property_5.jpg
+│       │   └── property_5.png
+│       ├── full_logo.png
+│       ├── half_logo.png
+│       ├── logo.png
+│       ├── profile.jpg
+│       └── lioreliora.jpg
 │
-├── dart_backend/              # Dart backend server
-│   ├── lib/
-│   │   ├── controllers/       # Request handlers
-│   │   ├── models/            # DB models (Dart classes)
-│   │   ├── routes/            # API endpoints
-│   │   └── database.dart      # DB connection & queries
-│   ├── config/
-│   ├── migration/             # DB schema migrations
-│   └── pubspec.yaml
+├── lib/
+│   ├── models/
+│   │   └── properties.dart
+│   │
+│   ├── screens/
+│   │   ├── dashboardScreen.dart
+│   │   ├── favoritesScreen.dart
+│   │   ├── home_screen.dart
+│   │   ├── profileScreen.dart
+│   │   ├── sample.dart
+│   │   ├── screen_routes.dart
+│   │   ├── searchScreen.dart
+│   │   ├── settingsScreen.dart
+│   │   └── welcome_screen.dart
+│   │
+│   ├── themes/
+│   │   ├── app_theme_extension.dart
+│   │   └── app_theme_main.dart
+│   │
+│   ├── utils/
+│   │   ├── constants.dart
+│   │   └── helpers.dart
+│   │
+│   ├── widgets/
+│   │   ├── app_drawer.dart
+│   │   ├── circular_icon_widget.dart
+│   │   ├── credit_card_widget.dart
+│   │   ├── half_card_widget.dart
+│   │   ├── screen_container.dart
+│   │   ├── screen_container_white.dart
+│   │   └── vrect_thumbnail.dart
+│   │
+│   └── main.dart
 │
-├── database/
-│   ├── schema.sql             # DB schema (tables: users, properties, messages, etc.)
-│   └── seeds/                 # Sample data
+├── test/
+│   └── widget_test.dart
 │
-├── docs/                      # Documentation, design, API specs
-├── .env.example               # Environment variables
-└── README.md                  # This file
+├── pubspec.yaml
+├── README.md
+├── .gitignore
+└── .metadata
 ```
+
+---
+
+### ✅ Key Notes on This Structure
+
+| Folder/File                 | Purpose                                                      |
+| --------------------------- | ------------------------------------------------------------ |
+| `assets/fonts/`             | Stores custom fonts used in the app (e.g., Lato, Montserrat) |
+| `assets/images/properties/` | Dedicated folder for property listing images                 |
+| `assets/images/`            | General app images: logos, profile, banners                  |
+| `lib/models/`               | Data models (e.g., `Property` class)                         |
+| `lib/screens/`              | All UI pages/screens of the app                              |
+| `lib/themes/`               | App-wide styling, colors, typography                         |
+| `lib/utils/`                | Reusable constants (strings, URLs) and helper functions      |
+| `lib/widgets/`              | Custom reusable UI components                                |
+| `lib/main.dart`             | Entry point of the app                                       |
+| `pubspec.yaml`              | Must include assets in `flutter:` section (see below)        |
+
+---
+
+### 🔧 Don't Forget: Update `pubspec.yaml`
+
+Ensure your `pubspec.yaml` includes the assets:
+
+```yaml
+flutter:
+  uses-material-design: true
+
+  # Assets
+  assets:
+    - assets/images/full_logo.png
+    - assets/images/half_logo.png
+    - assets/images/logo.png
+    - assets/images/profile.jpg
+    - assets/images/lioreliora.jpg
+    - assets/images/properties/
+
+  # Fonts
+  fonts:
+    - family: Lato
+      fonts:
+        - asset: assets/fonts/Lato-Regular.ttf
+        - asset: assets/fonts/Lato-Bold.ttf
+          weight: 700
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.ttf
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Medium.ttf
+          weight: 500
+```
+
+> 💡 Tip: You can just list `assets/images/` to include all images, but it's safer to list key ones explicitly.
+
+---
+
+All assets are organized under `assets/`, and core logic is separated into `models`, `screens`, `widgets`, and `utils`.
+
+````
+
+---
+
+### 🛠 Bonus: Recommended Next Steps
+
+1. **Create missing folders/files** if not already done:
+   ```bash
+   mkdir -p assets/fonts assets/images/properties lib/{models,screens,themes,utils,widgets}
+````
+
+2. **Add placeholder files**:
+
+   ```bash
+   touch lib/main.dart lib/models/properties.dart lib/themes/app_theme_main.dart
+   ```
+
+3. **Use consistent naming**: Prefer `snake_case` for files (`home_screen.dart`) and `PascalCase` for classes.
 
 ---
 

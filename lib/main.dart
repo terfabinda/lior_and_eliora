@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:PlaceIQ/screens/welcome_screen.dart';
-import 'package:PlaceIQ/Themes/app_theme_main.dart';
+import 'package:PlaceIQ/themes/app_theme_main.dart';
 
 void main() {
   runApp(const MyApp());
