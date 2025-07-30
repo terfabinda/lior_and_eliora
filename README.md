@@ -127,7 +127,7 @@ lior-and-eliora/
 
 | Home Screen                          | Search                                   | Property Detail                                    |
 | ------------------------------------ | ---------------------------------------- | -------------------------------------------------- |
-| ![Home](screenshots\home_screen.jpg) | ![Search](screenshots\search_screen.jpg) | ![Detail](assets/images/properties/property_2.jpg) |
+| ![Home](screenshots/home_screen.jpg) | ![Search](screenshots/search_screen.jpg) | ![Detail](assets/images/properties/property_2.jpg) |
 
 > 📌 _Actual screenshots will be added in v1.1. Placeholder images used for structure._
 
