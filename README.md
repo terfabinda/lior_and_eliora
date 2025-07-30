@@ -39,6 +39,10 @@ The app follows a **modular, maintainable architecture** for scalability and tea
 
 ```bash
 lior-and-eliora/
+├── screenshots/
+│   ├── home_screen.png
+│   ├── search_screen.png
+│   └── property_detail.png
 ├── assets/
 │   ├── fonts/
 │   │   ├── Lato-Regular.ttf
@@ -121,9 +125,9 @@ lior-and-eliora/
 
 ## 🖼️ Screenshots (Coming Soon)
 
-| Home Screen                                      | Search                                             | Property Detail                                    |
-| ------------------------------------------------ | -------------------------------------------------- | -------------------------------------------------- |
-| ![Home](assets/images/properties/property_0.jpg) | ![Search](assets/images/properties/property_1.jpg) | ![Detail](assets/images/properties/property_2.jpg) |
+| Home Screen                          | Search                                   | Property Detail                                    |
+| ------------------------------------ | ---------------------------------------- | -------------------------------------------------- |
+| ![Home](screenshots\home_screen.jpg) | ![Search](screenshots\search_screen.jpg) | ![Detail](assets/images/properties/property_2.jpg) |
 
 > 📌 _Actual screenshots will be added in v1.1. Placeholder images used for structure._
 
