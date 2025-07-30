@@ -1,92 +1,41 @@
-- ✅ **Frontend**: Built with **Flutter** (for iOS, Android, and Web)
-- ✅ **Backend & Server Logic**: Built with **Dart** using **Flutter-compatible backend solutions** (e.g., **Aqueduct**, **Angel**, or **custom Dart HTTP server**)
-- ✅ **Database**: PostgreSQL / MySQL (DBMS details maintained in Dart)
-- ✅ **Modern, clean, investor- and developer-friendly**
+Absolutely! Below is a **brand-new, professional, and comprehensive `README.md`** for your **Lior and Eliora** Flutter app — fully updated to reflect:
+
+✅ Your **project structure**  
+✅ Your **assets organization**  
+✅ Your **skills and authorship**  
+✅ A clean, scalable, developer- and client-friendly presentation
+
+This README is perfect for GitHub, investor pitches, or showcasing your work to clients.
 
 ---
 
-# 🏡 Lior and Eliora – Property Advertising & Sales Platform
+# 🏡 Lior and Eliora – Real Estate Mobile App
 
-![Lior and Eliora Logo](https://via.placeholder.com/150x150/1E3A8A/FFFFFF?text=LE)  
-_Your Trusted Partner in Real Estate_
+![Lior and Eliora Logo](assets/images/logo.png)  
+_A Flutter-Powered Property Advertising & Sales Platform for Nigeria_
 
-> **Lior and Eliora** is a **Flutter-powered real estate platform** that connects property owners, agents, and buyers across Nigeria. With a fully Dart-based stack — from frontend to backend — we deliver a fast, secure, and scalable solution for advertising, discovering, and selling properties with ease.
-
----
-
-## 🌟 Overview
-
-**Lior and Eliora** simplifies real estate in emerging markets by offering:
-
-- 📱 A **beautiful, responsive Flutter app** for Android, iOS, and Web
-- ⚙️ A **lightweight, efficient Dart backend** for API and business logic
-- 💾 A **robust DBMS** for managing listings, users, and transactions
-- 🌍 A **local-first approach** with smart search, offline support, and instant messaging
-
-Whether you're listing a home in Lekki or searching for land in Owerri, **Lior and Eliora** makes it seamless.
-
----
-
-## 📱 Key Features
-
-### For Property Owners & Agents
-
-✅ **List Properties in Minutes**  
-Upload photos, videos, documents, and detailed specs (location, price, type, amenities).
-
-✅ **Manage Listings & Availability**  
-Edit, pause, or mark properties as sold with one tap.
-
-✅ **Track Engagement**  
-See views, saves, and messages per listing.
-
-✅ **Verified Profiles**  
-Gain trust with verified badges and ID checks.
-
-### For Buyers & Renters
-
-🔍 **Smart Search & Filters**  
-Filter by location, price range, bedrooms, property type (apartment, duplex, land), and more.
-
-📍 **Interactive Map View**  
-Explore listings on Google Maps or OpenStreetMap integration.
-
-💬 **Secure In-App Chat**  
-Message owners/agents without sharing personal contacts.
-
-❤️ **Save & Compare Homes**  
-Shortlist favorites and compare side-by-side.
-
-### Admin & Platform Tools
-
-🔐 **Fraud Detection**  
-Automated flagging of duplicate or suspicious listings.
-
-📊 **Admin Dashboard**  
-Approve listings, manage users, and monitor platform health.
-
-🔔 **Push Notifications**  
-Alert users about new matches, messages, or price drops.
+> **Lior and Eliora** is a modern, scalable mobile application built with **Flutter** and **Dart**, designed to simplify property discovery, advertising, and transactions across Nigeria. Whether you're a buyer, agent, or landlord, our app delivers a seamless, beautiful, and fast experience — even on low-end devices and slow networks.
 
 ---
 
 ## 🛠️ Technology Stack
 
-| Layer                  | Technology                                                                                                |
-| ---------------------- | --------------------------------------------------------------------------------------------------------- |
-| **Frontend**           | **Flutter** (Android, iOS, Web)                                                                           |
-| **Backend**            | **Dart** with [Aqueduct](https://aqueduct.io) / [Angel](https://angel-dart.dev) / Custom Dart HTTP Server |
-| **Database**           | **PostgreSQL** (recommended) or **MySQL** (with `postgres` or `mysql1` Dart package)                      |
-| **State Management**   | Provider / Riverpod                                                                                       |
-| **Authentication**     | JWT + OAuth2 (Google, Apple)                                                                              |
-| **Storage**            | Firebase Storage / AWS S3 / Cloudinary                                                                    |
-| **Maps**               | `google_maps_flutter`, `flutter_map`                                                                      |
-| **Push Notifications** | Firebase Cloud Messaging (FCM)                                                                            |
-| **Deployment**         | Backend: Google Cloud Run / Heroku / Docker; App: Google Play, App Store, Web Hosting                     |
+| Layer                | Technology                                               |
+| -------------------- | -------------------------------------------------------- |
+| **Frontend**         | Flutter (Android, iOS, Web)                              |
+| **Language**         | Dart                                                     |
+| **State Management** | Built-in `setState` / Will scale to Provider or Riverpod |
+| **UI/UX**            | Custom widgets, Responsive Layouts                       |
+| **Theming**          | `ThemeExtension`, Custom Light/Dark Themes               |
+| **Navigation**       | Named routes via `screen_routes.dart`                    |
+| **Assets**           | Local images, custom fonts (Lato, Montserrat)            |
+| **Development**      | VS Code, Android Studio, Firebase (future)               |
 
 ---
 
-### 📁 **Directory Structure for `lior-and-eliora` Flutter App**
+## 📁 Project Structure
+
+The app follows a **modular, maintainable architecture** for scalability and team collaboration.
 
 ```bash
 lior-and-eliora/
@@ -151,39 +100,116 @@ lior-and-eliora/
 │   └── widget_test.dart
 │
 ├── pubspec.yaml
-├── README.md
 ├── .gitignore
-└── .metadata
+├── README.md
+└── LICENSE
 ```
 
 ---
 
-### ✅ Key Notes on This Structure
+## 🎯 Key Features
 
-| Folder/File                 | Purpose                                                      |
-| --------------------------- | ------------------------------------------------------------ |
-| `assets/fonts/`             | Stores custom fonts used in the app (e.g., Lato, Montserrat) |
-| `assets/images/properties/` | Dedicated folder for property listing images                 |
-| `assets/images/`            | General app images: logos, profile, banners                  |
-| `lib/models/`               | Data models (e.g., `Property` class)                         |
-| `lib/screens/`              | All UI pages/screens of the app                              |
-| `lib/themes/`               | App-wide styling, colors, typography                         |
-| `lib/utils/`                | Reusable constants (strings, URLs) and helper functions      |
-| `lib/widgets/`              | Custom reusable UI components                                |
-| `lib/main.dart`             | Entry point of the app                                       |
-| `pubspec.yaml`              | Must include assets in `flutter:` section (see below)        |
+- 🏠 **Property Listings** – Browse homes, lands, and offices with high-quality images
+- 🔍 **Smart Search** – Filter by location, price, bedrooms, and amenities
+- ❤️ **Favorites** – Save and compare your preferred properties
+- 👤 **User Profile** – Manage your listings, messages, and preferences
+- 🧭 **Dashboard** – Quick access to stats and recent activity
+- 🎨 **Custom Themes** – Light/dark mode with branded colors and fonts
+- 📱 **Responsive UI** – Works flawlessly on all screen sizes
 
 ---
 
-### 🔧 Don't Forget: Update `pubspec.yaml`
+## 🖼️ Screenshots (Coming Soon)
 
-Ensure your `pubspec.yaml` includes the assets:
+| Home Screen                                      | Search                                             | Property Detail                                    |
+| ------------------------------------------------ | -------------------------------------------------- | -------------------------------------------------- |
+| ![Home](assets/images/properties/property_0.jpg) | ![Search](assets/images/properties/property_1.jpg) | ![Detail](assets/images/properties/property_2.jpg) |
+
+> 📌 _Actual screenshots will be added in v1.1. Placeholder images used for structure._
+
+---
+
+## 🧩 Core Components
+
+### 📦 `models/properties.dart`
+
+Data model for property listings:
+
+```dart
+class Property {
+  final String title;
+  final String location;
+  final double price;
+  final String imageUrl;
+  final int bedrooms;
+  final String type; // "Apartment", "Land", "Duplex"
+}
+```
+
+### 🖼️ `widgets/`
+
+- `vrect_thumbnail.dart` – Vertical property card
+- `half_card_widget.dart` – Compact listing preview
+- `screen_container.dart` – Consistent padding & background
+- `app_drawer.dart` – Navigation drawer with profile & menu
+
+### 🎨 `themes/`
+
+- `app_theme_main.dart` – Main color palette and text themes
+- `app_theme_extension.dart` – Custom theme extensions for scalability
+
+### 🚪 `screens/screen_routes.dart`
+
+Centralized route management:
+
+```dart
+Map<String, WidgetBuilder> routes = {
+  '/welcome': (context) => WelcomeScreen(),
+  '/home': (context) => HomeScreen(),
+  '/search': (context) => SearchScreen(),
+  '/favorites': (context) => FavoritesScreen(),
+  '/profile': (context) => ProfileScreen(),
+  '/settings': (context) => SettingsScreen(),
+};
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Flutter SDK (v3.16+)
+- Dart SDK (v3.2+)
+- Android Studio / VS Code
+- Emulator or physical device
+
+### Installation
+
+```bash
+# Clone the repo
+git clone https://github.com/terfabinda/lior-and-eliora.git
+cd lior-and-eliora
+
+# Install dependencies
+flutter pub get
+
+# Run the app
+flutter run
+```
+
+> 💡 Make sure `pubspec.yaml` includes assets and fonts (see below).
+
+---
+
+## 📄 Assets & Fonts in `pubspec.yaml`
+
+Ensure your `pubspec.yaml` includes:
 
 ```yaml
 flutter:
   uses-material-design: true
 
-  # Assets
   assets:
     - assets/images/full_logo.png
     - assets/images/half_logo.png
@@ -192,7 +218,6 @@ flutter:
     - assets/images/lioreliora.jpg
     - assets/images/properties/
 
-  # Fonts
   fonts:
     - family: Lato
       fonts:
@@ -208,135 +233,49 @@ flutter:
           weight: 500
 ```
 
-> 💡 Tip: You can just list `assets/images/` to include all images, but it's safer to list key ones explicitly.
-
 ---
 
-All assets are organized under `assets/`, and core logic is separated into `models`, `screens`, `widgets`, and `utils`.
+## 📚 About the Developer
 
-````
+### **Terfa Binda**
 
----
+📱 **Full-Stack Developer | Tech Author | Flutter Specialist**
 
-### 🛠 Bonus: Recommended Next Steps
+- 📖 **Author of 3 Best-Selling Books on Amazon**:
+  1. [**Concise JavaScript**](https://www.amazon.com/dp/your-js-book)
+  2. [**Concise TypeScript**](https://www.amazon.com/dp/your-ts-book)
+  3. [**Web3.0: The Ultimate Guide to Decentralization**](https://www.amazon.com/dp/your-web3-book)
+- 💼 Skills: Flutter, Dart, React Native, Next.js, NestJS, Prisma, Node.js, Python, Java, C++, SQL (MySQL, PostgreSQL, SQL Server)
+- 🌍 Based in Nigeria | Remote-Friendly | Open to Freelance & Consulting
 
-1. **Create missing folders/files** if not already done:
-   ```bash
-   mkdir -p assets/fonts assets/images/properties lib/{models,screens,themes,utils,widgets}
-````
-
-2. **Add placeholder files**:
-
-   ```bash
-   touch lib/main.dart lib/models/properties.dart lib/themes/app_theme_main.dart
-   ```
-
-3. **Use consistent naming**: Prefer `snake_case` for files (`home_screen.dart`) and `PascalCase` for classes.
-
----
-
-## 🚀 Getting Started (For Developers)
-
-### Prerequisites
-
-- Flutter SDK (v3.16+)
-- Dart SDK (v3.2+)
-- PostgreSQL (or MySQL)
-- Firebase project (for auth & storage)
-- `dart` and `flutter` in PATH
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/your-username/lior-eliora.git
-cd lior-eliora
-```
-
-### 2. Set Up Backend
-
-```bash
-cd dart_backend
-dart pub get
-cp .env.example .env
-# Edit .env with DB credentials, JWT secret, etc.
-dart run bin/server.dart
-```
-
-> Server runs on `http://localhost:8888`
-
-### 3. Set Up Database
-
-```sql
--- Run schema.sql to create tables
-psql -U your_user -d your_db -f ../database/schema.sql
-```
-
-### 4. Run Flutter App
-
-```bash
-cd ../flutter_app
-flutter pub get
-flutter run
-```
-
-> 📄 See [SETUP.md](docs/SETUP.md) for full setup guide.
-
----
-
-## 🌍 Vision & Mission
-
-### 🎯 Mission
-
-To **democratize real estate access** in Nigeria by building a fast, reliable, and locally relevant platform using modern Dart & Flutter technology.
-
-### 🌱 Vision
-
-To become the **leading home-finding platform in West Africa**, powered entirely by a **unified Dart stack** — from UI to API.
-
----
-
-## 🤝 Get Involved
-
-We’re open to:
-
-- 🛠️ **Developers** — Help us scale the Dart backend and improve Flutter UX
-- 🏢 **Real Estate Partners** — List your agency or portfolio
-- 💡 **Investors & Sponsors** — Join our seed round
-- 📣 **Beta Testers** — Try the app and give feedback
-
-📧 **Contact**: hello@lior-eliora.com  
-🌐 **Website**: [www.lior-eliora.com](https://www.lior-eliora.com)
+📧 **Email**: terfabinda@example.com  
+📱 **WhatsApp**: +234 XXX XXX XX XX  
+💼 **LinkedIn**: [linkedin.com/in/terfabinda](https://linkedin.com/in/terfabinda)  
+📘 **Amazon Author Page**: [amazon.com/author/terfabinda](https://www.amazon.com/author/terfabinda)  
+🐙 **GitHub**: [github.com/terfabinda](https://github.com/terfabinda)
 
 ---
 
 ## 📄 License
 
-This project is licensed under the **MIT License**.  
-See [LICENSE](LICENSE) for details.
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 📬 Contact
+## 🚨 Note on Images
 
-**Lior and Eliora Technologies Ltd.**  
-📧 hello@lior-eliora.com  
-📱 +234 XXX XXX XX XX  
-📍 Lagos, Nigeria  
-💼 Serving Lagos, Abuja, Port Harcourt, Ibadan & beyond
+All images in `assets/images/` are **placeholders** for development purposes.  
+Real estate images will be:
 
----
-
-> _“A home is more than bricks and mortar. It’s peace, safety, and belonging.”_  
-> — Lior & Eliora
+- Uploaded by agents via admin panel (future)
+- Served from cloud storage (e.g., Firebase, AWS) in production
 
 ---
 
-✅ _Investor pitch deck, UI/UX designs, and live demo available upon request._  
-🚀 _Currently in beta — join our pilot program today!_
+> _“A home is not just a place — it’s peace, opportunity, and belonging.”_  
+> — **Terfa Binda**, Creator of Lior and Eliora
 
 ---
 
-_README v2.0 — Updated: May 2025_  
-🔧 Built with ❤️ and Dart
-
----
+_README v1.0 — Last Updated: May 2025_  
+🔧 Built with **Flutter**, **passion**, and **a vision for better housing access in Africa**
